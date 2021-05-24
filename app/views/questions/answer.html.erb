@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Stupid coach</h1>
+
+    <div class="my_question">
+      <%= params[:question] %>
+      <h3> - You</h3>
+    </div>
+
+    <div class="coach_answer">
+      <%= @coach_answer %>
+      <h3> - Your Stupid Coach</h3>
+    </div>
+
+    <%= link_to "Ask another stupid question", "/ask" %>
+  </div>
+</body>
+</html>
+
